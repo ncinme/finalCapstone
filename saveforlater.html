@@ -1,0 +1,92 @@
+<!-- References:
+  1. https://www.w3schools.com/
+  2. https://getbootstrap.com/docs/5.0/components/navbar/
+  3. https://getbootstrap.com/docs/5.0/components/carousel/
+
+  Note: This page lists down 'Save for Later' items in tabular form. 'Save for Later' links are given in the Hobbies page.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Hobbies</title>
+    <!--  Bootstrap Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <!-- local stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="./images/favicon.ico" />
+
+</head>
+
+<body onload="addRowToTable()">
+    <!-- bootstrap navbar. It will collapse during resizing. -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="">Mukul Chourey</a>
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hobbies.html">My Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-me.html">Contact Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="saveforlater.html">Save For Later</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 'Save for Later' section - to display the list in tabular form -->
+        <h2 id="noItem"></h2>
+        <section id="saveLaterTable">
+            <h2>Save for Later List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Link</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <!-- table rows and data will be created dynamically using javascript -->
+                <tbody id="saveLaterRows">
+                </tbody>
+            </table>
+        </section>
+        <br>
+    </main>
+    <br>
+
+    <!-- Footer section -->
+    <aside>
+        <a href="#top">Back to top</a>
+        <footer>
+            <p id="copyright"><em>Copyright 2022 NcInMe</em></p>
+        </footer>
+    </aside>
+    <script src="./js/saveforlater.js"></script>
+</body>
+
+</html>

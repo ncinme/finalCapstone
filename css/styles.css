@@ -1,0 +1,112 @@
+/* common components style */
+body {
+    background-color: #eaf6f6;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 70vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+ol {
+    color: #0d8db4;
+}
+
+img {
+    width: 80%;
+    height: 50%;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+/* Navigation Bar settings*/
+.navbar {
+    padding: 0 0 2rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: "Montserrat-Light", sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Home page - profile image */
+.profile {
+    width: 30vh;
+}
+
+/* Home page - Using different background colors for alternate sections */
+.section-bg {
+    all: revert;
+    display: block;
+    background-color: rgb(207, 230, 230);
+    padding: 5px;
+}
+
+/* Home page - managing table style */
+th,
+td {
+    border-top: 1px solid #a7dada;
+    border-bottom: 1px solid #a7dada;
+    padding: 5px;
+}
+
+.no-border {
+    border: none;
+}
+
+/* managing each column's width */
+table tr td:nth-child(1) {
+    width: 20vw;
+}
+
+table tr td:nth-child(2) {
+    width: 80vw;
+}
+
+/* Hobbies page - paragraph font style */
+.hobby {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: medium;
+    color: black;
+    font-style: normal;
+}
+
+/* Hobbies - managing carousal size */
+#carouselIndicators {
+    width: 80%;
+    padding: 5px;
+}
+
+/* Hobbies - managing icon size */
+.thumbsup {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+/* Hobbies - managing text in like and comment section */
+.like {
+    color: #0d8db4;
+    vertical-align: middle;
+    padding-left: 1vw;
+    padding-right: 5vw;
+}
+
+/* Contact Me page - restricting col size to keep text and radio buttons in the same line. */
+.col {
+    max-width: 40vh;
+}

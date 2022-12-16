@@ -1,0 +1,172 @@
+<!-- References:
+  1. https://www.w3schools.com/
+  2. https://getbootstrap.com/docs/5.0/components/navbar/
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Mukul's Personal Site</title>
+  <!--  Bootstrap Scripts-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+  <!-- local stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="icon" href="./images/favicon.ico" />
+</head>
+
+<body>
+  <!-- bootstrap navbar. It will collapse during resizing. -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="">Mukul Chourey</a>
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hobbies.html">My Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-me.html">Contact Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="saveforlater.html">Save For Later</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+
+  <!-- intro section. Using different background colors for alternate sections -->
+  <section class="section-bg">
+    <table class="no-border">
+      <tr>
+        <td class="no-border"><img class="profile" src="images/NcInme.png" alt="Mukul profile picture" /></td>
+        <td class="no-border">
+          <p>
+            <em>Web Development bootcamp student at
+              <strong><a href="https://HyperionDev.com">HyperionDev</a></strong>.</em>
+          </p>
+          <p>
+            Looking for a challenging opportunity as Software Engineer/Scrum
+            Master with an organization developing software products using
+            latest web development technologies.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </section>
+  <br>
+
+  <!-- Technology stack section. Demonstrates an unordered list. -->
+  <section>
+    <h4>Tech Stack</h4>
+    <ul>
+      <li>
+        <b>Programming Languages:</b> HTML, CSS, JavaScript, React JS, Node
+        JS, Python
+      </li>
+      <li><b>Technologies:</b> PostgreSQL, AWS, CI/CD, Git</li>
+      <li>
+        <b>Other:</b> Data structures and algorithms, Object Oriented
+        Programming
+      </li>
+    </ul>
+  </section>
+  <br>
+
+  <!-- Work experience section. Demonstrates a table. -->
+  <section class="section-bg">
+    <h4>Work Experience</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Dates</th>
+          <th>Organisation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2012-2022</td>
+          <td>Software Manager at SenecaGlobal IT Services</td>
+        </tr>
+        <tr>
+          <td>2008-2012</td>
+          <td>Project Manager – Agile at CEB, now Gartner</td>
+        </tr>
+        <tr>
+          <td>1996-2007</td>
+          <td>Consultant at Tata Consultancy Services</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <br>
+
+  <!-- Educaction and certification sections -->
+  <section>
+    <h4>Education and Certifications</h4>
+    <table>
+      <tr>
+        <td>1994-1996</td>
+        <td>M. Tech, Indian Institute of Technology Delhi, India</td>
+      </tr>
+      <tr>
+        <td>2022-Present</td>
+        <td>Web Development Bootcamp, HyperionDev</td>
+      </tr>
+      <tr>
+        <td>2012-Present</td>
+        <td>Agile Certified Professional, Project Management Institute</td>
+      </tr>
+      <tr>
+        <td>2010-Present</td>
+        <td>Certified Scrum Master, Scrum Alliance</td>
+      </tr>
+    </table>
+  </section>
+  <br>
+
+  <!-- Testimonials section -->
+  <section class="section-bg">
+    <h4>Testimonials</h4>
+    <p><em>
+        "I had the opportunity to work with Mukul on a year long project. What was immediately apparent was Mukul's
+        belief and enthusiasm in agile methodologies. He was key in introducing agile to his organisation and also
+        played a big role in helping team members getting on board with agile. I have found that as a project manager
+        Mukul doesn't shy away from the technical details when facing a difficult problem and thus deservedly commanded
+        respect from all members of the team. Always switched on and easy to get along, Mukul was very effective in
+        coordinating all the stake holders, including offshore teams, and thus was instrumental in delivering the
+        project on time, against very challenging schedule. I wouldn't hesitate to recommend Mukul and given the chance,
+        would love to work with him again."</em> - <b style="color: #0d8db4;">Gopal Krishnan, Azure Consultant at
+        Microsoft</b></p>
+  </section>
+
+  <!-- Footer section -->
+  <aside>
+    <a href="#top">Back to top</a>
+    <footer>
+      <p id="copyright"><em>Copyright 2022 NcInMe</em></p>
+    </footer>
+  </aside>
+</body>
+
+</html>

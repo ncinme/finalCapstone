@@ -1,0 +1,152 @@
+<!-- 
+Requiurements: 
+1. Create a functional “Save for later” feature:
+    ○ Each item/recipe/image, etc. must have the option to “Save for later”.
+    ○ When an item is added, an alert should tell the user how many items are in their “Save for later” folder.
+2. Create a form which allows a user to leave comments.
+3. Create forms to allow a user to “like” an item/article/etc.
+ 
+References:
+  1. https://www.w3schools.com/
+  2. https://getbootstrap.com/docs/5.0/components/navbar/
+  3. https://getbootstrap.com/docs/5.0/components/carousel/
+
+  Note: I have implemented 'Save for Later' links wherever any external links are used in this page, e.g. for each hobby. 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Hobbies</title>
+  <!--  Bootstrap Scripts-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+  <!-- local stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="./images/favicon.ico" />
+
+</head>
+
+<body onload="onLoad()">
+  <!-- bootstrap navbar. It will collapse during resizing. -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="">Mukul Chourey</a>
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hobbies.html">My Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-me.html">Contact Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="saveforlater.html">Save For Later</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <h2>My Hobbies</h2>
+    <br>
+    <!-- First hobby -->
+    <section>
+      <h3><em>Playing Cricket</em></h3>
+      <p class="hobby">The whole world was a playground. It was a great fun.</p>
+      <p class="hobby">
+        <a href="https://www.icc-cricket.com/homepage">International Cricket Council</a>
+        controls the game throughout the world. England recently won the T20 World Cup in Australia.
+      </p>
+      <a href="">Save for Later</a>
+    </section>
+    <br>
+    <!-- bootstrap carousel for slideshow of 3 images -->
+    <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="1500">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 carousel-image" src="images/t20_2022_Winners_1.webp" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 carousel-image" src="images/t20_2022_Winners_2.jpeg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 carousel-image" src="images/t20_2022_Winners_3.png" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <br>
+    </div>
+
+    <!-- Second hobby -->
+    <section>
+      <h3><em>Music</em></h3>
+      <p class="hobby">
+        Spent few years in the childhood learning to play <b>Violin</b>. I found it tough initially but picked up
+        basics of it in few months.
+        <a href="https://www.gramophone.co.uk/features/article/top-10-violin-concertos">Top 10
+          violin
+          concertos</a>
+        is a very informative website about some of the greatest violin concertos.
+      </p>
+      <a href="">Save for Later</a>
+      <br><br>
+      <img src="./images/violine.webp" alt="Violin" height="50" width="75" />
+    </section>
+    <br>
+
+    <!-- like and comment section -->
+    <section id="leaveComment">
+      <img class="thumbsup" src="./images/thumbsup_blank.png" alt="Violin" />
+      <span class="like">Like(0)</span>
+      <span class="like" id="comment">Leave Comment</span><br />
+      <form>
+        <textarea id="yourComment" class="form-control" rows="1" cols="30"></textarea><br />
+      </form>
+      <p id="allComments"><b>All Comments:</b></p>
+    </section>
+    <br>
+
+  </main>
+
+  <!-- Footer section -->
+  <aside>
+    <a href="#top">Back to top</a>
+    <footer>
+      <p id="copyright"><em>Copyright 2022 NcInMe</em></p>
+    </footer>
+  </aside>
+  <script src="./js/hobbies.js"></script>
+</body>
+
+</html>
