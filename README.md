@@ -50,4 +50,7 @@ You can save external links on the Hobbies page by clicking 'Save for Later' lin
 ## Credits and References <a name="ref"></a>
 Credits: [HyperionDev](https://www.hyperiondev.com/)
 
-References: [TOC](https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents)
+References: 
+[Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+[TOC](https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents)
